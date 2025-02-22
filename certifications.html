@@ -13,33 +13,47 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			.certification-card {
-				text-align: center;
-				margin-bottom: 1em;
-			}
-			.certification-card img {
-				max-width: 200px;
-				height: auto;
-				margin: 0 auto 1em;
-				display: block;
-			}
-			.certification-card h2 {
-				margin: 1em 0;
-			}
-			.certification-details {
-				margin: 1em 0;
-				text-align: center;
-			}
-			.certification-details p {
-				margin: 0.5em 0;
-				text-align: center;
-			}
-			.posts article {
-				width: 100%;
-				max-width: 500px;
-				margin: 0 auto 2em;
-				text-align: center;
-			}
+		/* General styling for the certification section */
+		.posts {
+		    display: flex;
+		    flex-wrap: wrap;
+		    justify-content: space-around;
+		    gap: 2em; /* Adds spacing between cards */
+		}
+		
+		/* Certification card styling */
+		.certification-card {
+		    text-align: center;
+		    width: 300px; /* Ensures uniform card width */
+		    border: 1px solid #ddd; /* Optional: Adds a border around each card */
+		    padding: 1em;
+		    border-radius: 8px; /* Optional: Adds rounded corners */
+		    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+		}
+		
+		.certification-card img {
+		    max-width: 100%; /* Ensures image fits within the card */
+		    height: auto;
+		    margin-bottom: 1em;
+		}
+		
+		.certification-details p {
+		    font-size: 1.1em; /* Slightly larger font for better readability */
+		    margin-bottom: 1em;
+		}
+		
+		.actions.special .button {
+		    display: inline-block;
+		    padding: 0.5em 1em;
+		    background-color: #007bff; /* Button color */
+		    color: white;
+		    text-decoration: none;
+		    border-radius: 5px;
+		}
+		
+		.actions.special .button:hover {
+		    background-color: #0056b3; /* Darker shade on hover */
+		}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -56,8 +70,8 @@
 					<li><a href="index.html">AI & ML</a></li>
 					<li><a href="generic.html">Product</a></li>
 					<li><a href="elements.html">Strategy</a></li>
-					<li class="active"><a href="education.html">Education</a></li>
-					<li><a href="certifications.html">Certifications</a></li>
+					<li><a href="education.html">Education</a></li>
+					<li class="active"><a href="certifications.html">Certifications</a></li>
 				</ul>
 				<ul class="icons">
 					<li><a href="https://www.linkedin.com/in/adithyaramachar/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
@@ -69,75 +83,65 @@
 			<div id="main">
 				<!-- Posts -->
 				<section class="posts">
-					<article class="certification-card">
-						<a href="" class="image">
-							<img src="images/AWS-Certified-Cloud-Practitioner_badge.png" alt="AWS" style="width: 300px; height: auto;" />
-						</a>
-						
-						<div class="certification-details">
-							<p>AWS Cloud Practitioner</p>
-							
-						</div>
-						<ul class="actions special">
-							<li><a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/14fb38db9d6a457d9d86cefd17c30072" class="button">View Certificate</a></li>
-						</ul>
-					</article>
-					
-					<article class="certification-card">
-						<a href="" class="image">
-							<img src="images/IBM_logo.png" alt="IBM" style="width: 300px; height: auto;" />
-						</a>
-						
-						<div class="certification-details">
-							<p>IBM Product Manager</p>
-							
-						</div>
-						<ul class="actions special">
-							<li><a href="https://www.coursera.org/account/accomplishments/professional-cert/NEVDVXD46H97" class="button">View Certificate</a></li>
-						</ul>
-					</article>
-
-					<article class="certification-card">
-						<a href="" class="image">
-							<img src="images/Google-Logo.png" alt="Google" style="width: 300px; height: auto;" />
-						</a>
-						
-						<div class="certification-details">
-							<p>Google Project Management</p>
-							
-						</div>
-						<ul class="actions special">
-							<li><a href="https://www.coursera.org/account/accomplishments/professional-cert/L7C87FEKRXKP" class="button">View Certificate</a></li>
-						</ul>
-					</article>
-
-					<article class="certification-card">
-						<a href="https://www.iisertirupati.ac.in/admission-bsms/" class="image">
-							<img src="images/IE-University-logo.png" alt="IE University" style="width: 300px; height: auto;" />
-						</a>
-						
-						<div class="certification-details">
-							<p>Leadership in times of volatility and uncertainty</p>
-							
-						</div>
-						<ul class="actions special">
-							<li><a href="https://www.preprograms.ie.edu/gwc/certificate_download/2YGFNgMW75" class="button">View Certificate</a></li>
-						</ul>
-					</article>
-
-					<article class="certification-card">
-						<a href="" class="image">
-							<img src="BGG-Logo.png" alt="BCG" style="width: 300px; height: auto;" />
-						</a>
-						
-						<div class="certification-details">
-							<p>Climate & Sustainability</p>
-							
-						</div>
-						<ul class="actions special">
-							<li><a href="https://www.theforage.com/badges/cwgPYPF8Nb99exJyS/BuN6K7TrMQ7DjLJ6H/Badge%20of%20completion%20for%20the%20Climate%20&%20Sustainability%20Virtual%20Experience%20Program/Adithya" class="button">View Badge</a></li>
-						</ul>
-					</article>
+				    <article class="certification-card">
+				        <a href="" class="image">
+				            <img src="images/AWS-Certified-Cloud-Practitioner_badge.png" alt="AWS" />
+				        </a>
+				        <div class="certification-details">
+				            <p>AWS Cloud Practitioner</p>
+				        </div>
+				        <ul class="actions special">
+				            <li><a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/14fb38db9d6a457d9d86cefd17c30072" class="button">View Certificate</a></li>
+				        </ul>
+				    </article>
+				
+				    <article class="certification-card">
+				        <a href="" class="image">
+				            <img src="images/IBM_logo.png" alt="IBM" />
+				        </a>
+				        <div class="certification-details">
+				            <p>IBM Product Manager</p>
+				        </div>
+				        <ul class="actions special">
+				            <li><a href="https://www.coursera.org/account/accomplishments/professional-cert/NEVDVXD46H97" class="button">View Certificate</a></li>
+				        </ul>
+				    </article>
+				
+				    <article class="certification-card">
+				        <a href="" class="image">
+				            <img src="images/Google-Logo.png" alt="Google" />
+				        </a>
+				        <div class="certification-details">
+				            <p>Google Project Management</p>
+				        </div>
+				        <ul class="actions special">
+				            <li><a href="https://www.coursera.org/account/accomplishments/professional-cert/L7C87FEKRXKP" class="button">View Certificate</a></li>
+				        </ul>
+				    </article>
+				
+				    <article class="certification-card">
+				        <a href="" class="image">
+				            <img src="images/IE-University-logo.png" alt="IE University" />
+				        </a>
+				        <div class="certification-details">
+				            <p>Leadership in times of volatility and uncertainty</p>
+				        </div>
+				        <ul class="actions special">
+				            <li><a href="https://www.preprograms.ie.edu/gwc/certificate_download/2YGFNgMW75" class="button">View Certificate</a></li>
+				        </ul>
+				    </article>
+				
+				    <article class="certification-card">
+				        <a href="" class="image">
+				            <img src="BGG-Logo.png" alt="BCG" />
+				        </a>
+				        <div class="certification-details">
+				            <p>Climate & Sustainability</p>
+				        </div>
+				        <ul class="actions special">
+				            <li><a href="https://www.theforage.com/badges/cwgPYPF8Nb99exJyS/BuN6K7TrMQ7DjLJ6H/Badge%20of%20completion%20for%20the%20Climate%20&%20Sustainability%20Virtual%20Experience%20Program/Adithya" class="button">View Badge</a></li>
+				        </ul>
+				    </article>
 				</section>
 			</div>
 
