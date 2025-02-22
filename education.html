@@ -6,70 +6,49 @@
 -->
 <html>
 	<head>
-		<title>Elements Reference - Massively by HTML5 UP</title>
+		<title>Adithya Ramachar</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			.posts {
+			.education-card {
+				text-align: center;
+				margin-bottom: 2em;
+			}
+			.education-card img {
+				max-width: 200px;
+				height: auto;
+				margin: 0 auto 1em;
+				display: block;
+			}
+			.education-card h2 {
+				margin: 1em 0;
+			}
+			.education-details {
+				margin: 1em 0;
+			}
+			.education-details p {
+				margin: 0.5em 0;
+			}
+			.posts article {
 				display: flex;
-				justify-content: space-between;
+				justify-content: center;
+				align-items: flex-start;
 				gap: 2em;
 				padding: 2em;
 			}
 			
-			.education-card {
-				text-align: center;
-				padding: 2em;
-				flex: 1;
-				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
-				max-width: 50%;
-			}
-			
-			.education-card img {
-				max-width: 300px;
-				height: auto;
-				margin: 0 auto 2em;
-				display: block;
-			}
-			
-			.education-card h2 {
-				font-size: 1.8em;
-				margin: 1em 0;
-				text-align: center;
-			}
-			
-			.education-details {
-				margin: 2em 0;
-				text-align: center;
-				flex-grow: 1;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-			}
-			
-			.education-details p {
-				margin: 0.5em 0;
-				text-align: center;
-				font-size: 1.2em;
-			}
-			
-			.actions.special {
-				margin-top: auto;
-			}
-			
 			/* Responsive layout */
-			@media screen and (max-width: 980px) {
-				.posts {
-					flex-direction: column;
-					align-items: center;
+			@media screen and (max-width: 500px) {
+				.education-card {
+					width: 100%;
+					margin: 0 0 2em 0;
 				}
 				
-				.education-card {
-					max-width: 100%;
+				.posts article {
+					flex-direction: column;
+					align-items: center;
 				}
 			}
 		</style>
@@ -103,26 +82,26 @@
 				<section class="posts">
 					<article class="education-card">
 						<a href="https://www.ie.edu/business-school/" class="image">
-							<img src="images/IE-MIM.png" alt="IE Business School" style="width: 300px; height: auto;" />
+							<img src="images/IE-MIM.png" alt="IE Business School" style="width: 200px; height: auto;" />
 						</a>
 						<header>
-							<h2><a href="https://www.ie.edu/business-school/programs/masters/master-in-management/">IE BUSINESS SCHOOL</a></h2>
+							<h2><a href="https://www.ie.edu/business-school/programs/masters/master-in-management/">IE Business School</a></h2>
 						</header>
 						<div class="education-details">
 							<p>Masters in Management</p>
 							<p>Major in Business Analytics</p>
 						</div>
 						<ul class="actions special">
-							<li><a href="https://drive.google.com/file/d/1gOB9jlwbCTZqutBpr_h_IE7zsT1qCd1e/view?usp=sharing" class="button">VIEW DIPLOMA</a></li>
+							<li><a href="https://drive.google.com/file/d/1gOB9jlwbCTZqutBpr_h_IE7zsT1qCd1e/view?usp=sharing" class="button">View Diploma</a></li>
 						</ul>
 					</article>
 					
 					<article class="education-card">
 						<a href="https://www.iisertirupati.ac.in/admission-bsms/" class="image">
-							<img src="images/IISER tirupati-logo.png" alt="IISER Tirupati" style="width: 300px; height: auto;" />
+							<img src="images/IISER tirupati-logo.png" alt="IISER Tirupati" style="width: 200px; height: auto;" />
 						</a>
 						<header>
-							<h2><a href="https://www.iisertirupati.ac.in/">INDIAN INSTITUTE OF SCIENCE EDUCATION AND RESEARCH TIRUPATI</a></h2>
+							<h2><a href="https://www.iisertirupati.ac.in/">Indian Institute of Science Education and Research Tirupati</a></h2>
 						</header>
 						<div class="education-details">
 							<p>Bachelor of Science</p>
@@ -130,7 +109,7 @@
 							<p>Major in Life Sciences</p>
 						</div>
 						<ul class="actions special">
-							<li><a href="https://drive.google.com/file/d/1yBlmHocHgez_O4VjuItrjaigL7y6GEDX/view?usp=sharing" class="button">VIEW DIPLOMA</a></li>
+							<li><a href="https://drive.google.com/file/d/1yBlmHocHgez_O4VjuItrjaigL7y6GEDX/view?usp=sharing" class="button">View Diploma</a></li>
 						</ul>
 					</article>
 				</section>
