@@ -18,14 +18,14 @@
 		    display: flex; /* Enables flexbox layout */
 		    flex-wrap: wrap; /* Allows wrapping to the next row if needed */
 		    justify-content: space-between; /* Distributes cards evenly with space between them */
-		    gap: 2em; /* Adds spacing between cards */
+		    gap: 1.5em; /* Adds spacing between cards */
 		    padding: 1em; /* Adds padding around the section */
 		}
 		
 		/* Certification card styling */
 		.certification-card {
 		    text-align: center;
-		    width: 300px; /* Ensures uniform card width */
+		    width: 250px; /* Reduces card width for better fit */
 		    border: 1px solid #ddd; /* Optional: Adds a border around each card */
 		    padding: 1em;
 		    border-radius: 8px; /* Optional: Adds rounded corners */
@@ -36,12 +36,13 @@
 		.certification-card img {
 		    max-width: 100%; /* Ensures image fits within the card */
 		    height: auto;
+		    max-height: 150px; /* Reduces image height for uniformity */
 		    margin-bottom: 1em;
 		}
 		
 		/* Text styling for certification details */
 		.certification-details p {
-		    font-size: 1.1em; /* Slightly larger font for better readability */
+		    font-size: 1em; /* Adjust font size for better readability */
 		    margin-bottom: 1em;
 		}
 		
@@ -49,14 +50,14 @@
 		.actions.special .button {
 		    display: inline-block;
 		    padding: 0.5em 1em;
-		    background-color: #f7f8fa; /* Button color */
+		    background-color: ##fcfdff; /* Button color */
 		    color: white;
 		    text-decoration: none;
 		    border-radius: 5px;
 		}
 		
 		.actions.special .button:hover {
-		    background-color: #f7f8fa; /* Darker shade on hover */
+		    background-color: ##fcfdff; /* Darker shade on hover */
 		}
 		</style>
 	</head>
