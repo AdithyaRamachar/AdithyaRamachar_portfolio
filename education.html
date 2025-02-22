@@ -13,19 +13,20 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			.posts {
-				display: grid;
-				grid-template-columns: repeat(2, 1fr);
+				display: flex;
+				justify-content: space-between;
 				gap: 2em;
-				padding: 0 2em;
+				padding: 2em;
 			}
 			
 			.education-card {
 				text-align: center;
 				padding: 2em;
-				height: 100%;
+				flex: 1;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
+				max-width: 50%;
 			}
 			
 			.education-card img {
@@ -63,9 +64,12 @@
 			/* Responsive layout */
 			@media screen and (max-width: 980px) {
 				.posts {
-					grid-template-columns: 1fr;
-					max-width: 600px;
-					margin: 0 auto;
+					flex-direction: column;
+					align-items: center;
+				}
+				
+				.education-card {
+					max-width: 100%;
 				}
 			}
 		</style>
