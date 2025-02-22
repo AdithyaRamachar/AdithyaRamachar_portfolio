@@ -12,34 +12,62 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			.education-card {
-				text-align: center;
-				margin-bottom: 1em;
-			}
-			.education-card img {
-				max-width: 200px;
-				height: auto;
-				margin: 0 auto 1em;
-				display: block;
-			}
-			.education-card h2 {
-				margin: 1em 0;
-			}
-			.education-details {
-				margin: 1em 0;
-				text-align: center;
-			}
-			.education-details p {
-				margin: 0.5em 0;
-				text-align: center;
-			}
-			.posts article {
-				width: 100%;
-				max-width: 500px;
-				margin: 0 auto 2em;
-				text-align: center;
-			}
-		</style>
+	        .education-container {
+	            display: flex;
+	            justify-content: center;
+	            gap: 2rem;
+	            padding: 2rem;
+	            max-width: 1200px;
+	            margin: 0 auto;
+	        }
+	
+	        .education-card {
+	            flex: 1;
+	            max-width: 400px;
+	            background: white;
+	            border-radius: 8px;
+	            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	            padding: 1.5rem;
+	            text-align: center;
+	        }
+	
+	        .education-card img {
+	            width: 200px;
+	            height: 200px;
+	            object-fit: contain;
+	            margin: 0 auto 1rem;
+	        }
+	
+	        .education-card h2 {
+	            color: #333;
+	            margin: 1rem 0;
+	            font-size: 1.5rem;
+	        }
+	
+	        .education-details {
+	            margin: 1rem 0;
+	        }
+	
+	        .education-details p {
+	            margin: 0.5rem 0;
+	            color: #666;
+	        }
+	
+	        .button {
+	            display: inline-block;
+	            padding: 0.75rem 1.5rem;
+	            background-color: #007bff;
+	            color: white;
+	            text-decoration: none;
+	            border-radius: 4px;
+	            margin-top: 1rem;
+	            transition: background-color 0.3s;
+	        }
+	
+	        .button:hover {
+	            background-color: #f7f9fa;
+	        }
+	    </style>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -65,42 +93,31 @@
 			</nav>
 
 			<!-- Main -->
-			<div id="main">
-				<!-- Posts -->
-				<section class="posts">
-					<article class="education-card">
-						<a href="https://www.ie.edu/business-school/" class="image">
-							<img src="images/IE-MIM.png" alt="IE Business School" style="width: 300px; height: auto;" />
-						</a>
-						<header>
-							<h2><a href="https://www.ie.edu/business-school/programs/masters/master-in-management/">IE Business School</a></h2>
-						</header>
-						<div class="education-details">
-							<p>Masters in Management</p>
-							<p>Major in Business Analytics</p>
-						</div>
-						<ul class="actions special">
-							<li><a href="https://drive.google.com/file/d/1gOB9jlwbCTZqutBpr_h_IE7zsT1qCd1e/view?usp=sharing" class="button">View Diploma</a></li>
-						</ul>
-					</article>
-					
-					<article class="education-card">
-						<a href="https://www.iisertirupati.ac.in/admission-bsms/" class="image">
-							<img src="images/IISER tirupati-logo.png" alt="IISER Tirupati" style="width: 300px; height: auto;" />
-						</a>
-						<header>
-							<h2><a href="https://www.iisertirupati.ac.in/">IISER Tirupati</a></h2>
-						</header>
-						<div class="education-details">
-							<p>Bachelor of Science</p>
-							<p>Master of Science</p>
-							<p>Major in Life Sciences</p>
-						</div>
-						<ul class="actions special">
-							<li><a href="https://drive.google.com/file/d/1yBlmHocHgez_O4VjuItrjaigL7y6GEDX/view?usp=sharing" class="button">View Diploma</a></li>
-						</ul>
-					</article>
-				</section>
+			<div class="education-container">
+			        <div class="education-card">
+			            <a href="https://www.ie.edu/business-school/">
+			                <img src="images/IE-MIM.png" alt="IE Business School">
+			            </a>
+			            <h2>IE Business School</h2>
+			            <div class="education-details">
+			                <p>Masters in Management</p>
+			                <p>Major in Business Analytics</p>
+			            </div>
+			            <a href="https://drive.google.com/file/d/1gOB9jlwbCTZqutBpr_h_IE7zsT1qCd1e/view?usp=sharing" class="button">View Diploma</a>
+			        </div>
+			
+			        <div class="education-card">
+			            <a href="https://www.iisertirupati.ac.in/">
+			                <img src="images/IISER tirupati-logo.png" alt="IISER Tirupati">
+			            </a>
+			            <h2>Indian Institute of Science Education and Research Tirupati</h2>
+			            <div class="education-details">
+			                <p>Bachelor of Science</p>
+			                <p>Master of Science</p>
+			                <p>Major in Life Sciences</p>
+			            </div>
+			            <a href="https://drive.google.com/file/d/1yBlmHocHgez_O4VjuItrjaigL7y6GEDX/view?usp=sharing" class="button">View Diploma</a>
+			        </div>
 			</div>
 
 			<!-- Footer -->
