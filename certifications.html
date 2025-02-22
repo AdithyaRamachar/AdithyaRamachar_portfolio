@@ -15,10 +15,11 @@
 		<style>
 		/* General styling for the certification section */
 		.posts {
-		    display: flex;
-		    flex-wrap: wrap;
-		    justify-content: space-around;
+		    display: flex; /* Enables flexbox layout */
+		    flex-wrap: wrap; /* Allows wrapping to the next row if needed */
+		    justify-content: space-between; /* Distributes cards evenly with space between them */
 		    gap: 2em; /* Adds spacing between cards */
+		    padding: 1em; /* Adds padding around the section */
 		}
 		
 		/* Certification card styling */
@@ -31,28 +32,31 @@
 		    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
 		}
 		
+		/* Image styling within the cards */
 		.certification-card img {
 		    max-width: 100%; /* Ensures image fits within the card */
 		    height: auto;
 		    margin-bottom: 1em;
 		}
 		
+		/* Text styling for certification details */
 		.certification-details p {
 		    font-size: 1.1em; /* Slightly larger font for better readability */
 		    margin-bottom: 1em;
 		}
 		
+		/* Button styling */
 		.actions.special .button {
 		    display: inline-block;
 		    padding: 0.5em 1em;
-		    background-color: #007bff; /* Button color */
+		    background-color: #f7f8fa; /* Button color */
 		    color: white;
 		    text-decoration: none;
 		    border-radius: 5px;
 		}
 		
 		.actions.special .button:hover {
-		    background-color: #0056b3; /* Darker shade on hover */
+		    background-color: #f7f8fa; /* Darker shade on hover */
 		}
 		</style>
 	</head>
