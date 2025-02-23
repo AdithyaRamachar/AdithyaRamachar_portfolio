@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <!--
 	Massively by HTML5 UP
@@ -20,46 +19,75 @@
 		    justify-content: space-between; /* Distributes cards evenly with space between them */
 		    gap: 1.5em; /* Adds spacing between cards */
 		    padding: 1em; /* Adds padding around the section */
-		}
-		
-		/* Certification card styling */
-		.certification-card {
+		}	
+	        .certification-container {
+	            display: flex;
+	            justify-content: center;
+	            gap: 2rem;
+	            padding: 2rem;
+	            max-width: 1200px;
+	            margin: 0 auto;
+	        }
+	
+	        .certification-card {
+	            flex: 1;
+	            max-width: 400px;
+	            background: white;
+	            border-radius: 8px;
+	            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	            padding: 1.5rem;
+	            text-align: center;
+	        }
+	
+	        .certification-card img {
+	            width: 200px;
+	            height: 200px;
+	            object-fit: contain;
+	            margin: 0 auto 1rem;
 		    text-align: center;
-		    width: 250px; /* Reduces card width for better fit */
-		    border: 1px solid #ddd; /* Optional: Adds a border around each card */
-		    padding: 1em;
-		    border-radius: 8px; /* Optional: Adds rounded corners */
-		    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
-		}
-		
-		/* Image styling within the cards */
-		.certification-card img {
-		    max-width: 100%; /* Ensures image fits within the card */
-		    height: auto;
-		    max-height: 150px; /* Reduces image height for uniformity */
-		    margin-bottom: 1em;
-		}
-		
-		/* Text styling for certification details */
-		.certification-details p {
-		    font-size: 1em; /* Adjust font size for better readability */
-		    margin-bottom: 1em;
-		}
-		
-		/* Button styling */
-		.actions.special .button {
-		    display: inline-block;
-		    padding: 0.5em 1em;
-		    background-color: ##fcfdff; /* Button color */
-		    color: white;
-		    text-decoration: none;
-		    border-radius: 5px;
-		}
-		
-		.actions.special .button:hover {
-		    background-color: ##fcfdff; /* Darker shade on hover */
-		}
-		</style>
+	        }
+	
+	        .certification-card h2 {
+	            color: #333;
+	            margin: 1rem 0;
+	            font-size: 1.5rem;
+		    
+	        }
+	
+	        .certification-details {
+	            margin: 1rem 0;
+		    text-align: center;
+	        }
+	
+	        .certification-details p {
+	            margin: 0.5rem 0;
+	            color: #666;
+		    text-align: center;
+	        }
+
+		.button-container {
+	            width: 100%;
+	            display: flex;
+	            justify-content: center;
+	            margin-top: auto;
+	            padding-top: 1rem;
+	        }	
+	        .button {
+	            display: inline-block;
+	            padding: 0.75rem 1.5rem;
+	            background-color: #fcfdff;
+	            color: white;
+	            text-decoration: none;
+	            border-radius: 4px;
+	            margin-top: auto;
+	            transition: background-color 0.3s;
+		    text-align: center;
+	        }
+	
+	        .button:hover {
+	            background-color: #fcfdff;
+	        }
+	    </style>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -86,68 +114,68 @@
 
 			<!-- Main -->
 			<div id="main">
-				<!-- Posts -->
-				<section class="posts">
-				    <article class="certification-card">
-				        <a href="" class="image">
-				            <img src="images/AWS-Certified-Cloud-Practitioner_badge.png" alt="AWS" />
-				        </a>
-				        <div class="certification-details">
-				            <p>AWS Cloud Practitioner</p>
+				<div class="certification-container">
+				        <div class="certification-card">
+				            <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/14fb38db9d6a457d9d86cefd17c30072">
+				                <img src="images/AWS-Certified-Cloud-Practitioner_badge.png" alt="AWS">
+				            </a>
+				            
+				            <div class="certification-details">
+				                <p>AWS Cloud Practioner</p>
+				                
+				            </div>
+				            <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/14fb38db9d6a457d9d86cefd17c30072" class="button">View Certificate</a>
 				        </div>
-				        <ul class="actions special">
-				            <li><a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/14fb38db9d6a457d9d86cefd17c30072" class="button">View Certificate</a></li>
-				        </ul>
-				    </article>
 				
-				    <article class="certification-card">
-				        <a href="" class="image">
-				            <img src="images/IBM_logo.png" alt="IBM" />
-				        </a>
-				        <div class="certification-details">
-				            <p>IBM Product Manager</p>
+				        <div class="certification-card">
+				            <a href="https://www.coursera.org/account/accomplishments/professional-cert/L7C87FEKRXKP">
+				                <img src="images/Google-Logo.png" alt="Google">
+				            </a>
+				            
+				            <div class="certification-details">
+				                <p>Google Project Management</p>
+				                
+				            </div>
+				            <a href="https://www.coursera.org/account/accomplishments/professional-cert/L7C87FEKRXKP" class="button">View Diploma</a>
 				        </div>
-				        <ul class="actions special">
-				            <li><a href="https://www.coursera.org/account/accomplishments/professional-cert/NEVDVXD46H97" class="button">View Certificate</a></li>
-				        </ul>
-				    </article>
+
+					<div class="certification-card">
+				            <a href="https://www.coursera.org/account/accomplishments/professional-cert/NEVDVXD46H97">
+				                <img src="images/IBM_logo.png" alt="IBM">
+				            </a>
+				            
+				            <div class="certification-details">
+				                <p>IBM Product Manager</p>
+				                
+				            </div>
+				            <a href="https://www.coursera.org/account/accomplishments/professional-cert/NEVDVXD46H97" class="button">View Diploma</a>
+				        </div>
+				</div>
+				<div class="certification-container">
+				        <div class="certification-card">
+				            <a href="https://www.theforage.com/badges/cwgPYPF8Nb99exJyS/BuN6K7TrMQ7DjLJ6H/Badge%20of%20completion%20for%20the%20Climate%20&%20Sustainability%20Virtual%20Experience%20Program/Adithya">
+				                <img src="images/bcg-logo-png.png" alt="BCG">
+				            </a>
+				            
+				            <div class="certification-details">
+				                <p>Climate & Sustainability</p>
+				                
+				            </div>
+				            <a href="https://www.theforage.com/badges/cwgPYPF8Nb99exJyS/BuN6K7TrMQ7DjLJ6H/Badge%20of%20completion%20for%20the%20Climate%20&%20Sustainability%20Virtual%20Experience%20Program/Adithya" class="button">View Badge</a>
+				        </div>
 				
-				    <article class="certification-card">
-				        <a href="" class="image">
-				            <img src="images/Google-Logo.png" alt="Google" />
-				        </a>
-				        <div class="certification-details">
-				            <p>Google Project Management</p>
+				        <div class="certification-card">
+				            <a href="https://www.preprograms.ie.edu/gwc/certificate_download/OY62I6MWl31">
+				                <img src="images/IE-University-logo.png" alt="IE University">
+				            </a>
+				            
+				            <div class="certification-details">
+				                <p>Foundations of Sustainability</p>
+				                
+				            </div>
+				            <a href="https://www.preprograms.ie.edu/gwc/certificate_download/OY62I6MWl31" class="button">View Badge</a>
 				        </div>
-				        <ul class="actions special">
-				            <li><a href="https://www.coursera.org/account/accomplishments/professional-cert/L7C87FEKRXKP" class="button">View Certificate</a></li>
-				        </ul>
-				    </article>
-				
-				    <article class="certification-card">
-				        <a href="" class="image">
-				            <img src="images/IE-University-logo.png" alt="IE University" />
-				        </a>
-				        <div class="certification-details">
-				            <p>Leadership in times of volatility and uncertainty</p>
-				        </div>
-				        <ul class="actions special">
-				            <li><a href="https://www.preprograms.ie.edu/gwc/certificate_download/2YGFNgMW75" class="button">View Certificate</a></li>
-				        </ul>
-				    </article>
-				
-				    <article class="certification-card">
-				        <a href="" class="image">
-				            <img src="BGG-Logo.png" alt="BCG" />
-				        </a>
-				        <div class="certification-details">
-				            <p>Climate & Sustainability</p>
-				        </div>
-				        <ul class="actions special">
-				            <li><a href="https://www.theforage.com/badges/cwgPYPF8Nb99exJyS/BuN6K7TrMQ7DjLJ6H/Badge%20of%20completion%20for%20the%20Climate%20&%20Sustainability%20Virtual%20Experience%20Program/Adithya" class="button">View Badge</a></li>
-				        </ul>
-				    </article>
-				</section>
+				</div>
 			</div>
 
 			<!-- Footer -->
