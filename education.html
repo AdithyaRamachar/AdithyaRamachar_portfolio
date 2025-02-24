@@ -92,6 +92,72 @@
 	        .button:hover {
 	            background-color: #fcfdff;
 	        }
+
+		/* Media Queries for Responsive Design */
+	        /* For large screens (extended/ultrawide monitors) */
+	        @media screen and (min-width: 1921px) {
+	            .education-container {
+	                max-width: 1800px;
+	                gap: 3rem;
+	            }
+	            
+	            .education-card {
+	                max-width: 500px;
+	            }
+	
+	            .education-card img {
+	                width: 250px;
+	                height: 250px;
+	            }
+	
+	            .education-card h2 {
+	                font-size: 1.8rem;
+	            }
+	        }
+	
+	        /* For regular desktop screens */
+	        @media screen and (min-width: 1201px) and (max-width: 1920px) {
+	            .education-container {
+	                max-width: 1200px;
+	            }
+	        }
+	
+	        /* For tablets and smaller desktop screens */
+	        @media screen and (min-width: 768px) and (max-width: 1200px) {
+	            .education-container {
+	                padding: 1.5rem;
+	                gap: 1.5rem;
+	            }
+	
+	            .education-card {
+	                flex: 0 1 calc(50% - 2rem);
+	                min-width: 280px;
+	            }
+	        }
+	
+	        /* For mobile devices */
+	        @media screen and (max-width: 767px) {
+	            .education-container {
+	                padding: 1rem;
+	                flex-direction: column;
+	                align-items: center;
+	            }
+	
+	            .education-card {
+	                flex: 1 1 100%;
+	                margin: 1rem 0;
+	                min-width: 250px;
+	            }
+	
+	            .education-card img {
+	                width: 150px;
+	                height: 150px;
+	            }
+	
+	            .education-card h2 {
+	                font-size: 1.3rem;
+	            }
+	        }
 	    </style>
 	</head>
 	<body class="is-preload">
