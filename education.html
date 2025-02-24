@@ -1,9 +1,14 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-    <style>
-        /* Navigation container */
-        #nav {
+	<head>
+		<title>Adithya Ramachar</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+		/* Navigation Styles */
+		#nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -12,7 +17,6 @@
             background: rgba(35, 35, 35, 0.95);
         }
 
-        /* Left side navigation links */
         #nav ul.links {
             display: flex;
             gap: 2rem;
@@ -39,7 +43,6 @@
             border-bottom-color: #ffffff;
         }
 
-        /* Right side social icons */
         #nav ul.icons {
             display: flex;
             gap: 1rem;
@@ -62,40 +65,225 @@
             color: #9bf1ff;
         }
 
-        /* Responsive design */
-        @media screen and (max-width: 736px) {
-            #nav {
-                flex-direction: column;
-                padding: 1rem;
-                gap: 1rem;
+		/* Education Cards Styles */
+		.posts {
+		    display: flex;
+		    flex-wrap: wrap;
+		    justify-content: space-between;
+		    gap: 1.5em;
+		    padding: 1em;
+		}	
+	        .education-container {
+	            display: flex;
+	            flex-wrap: wrap;
+	            justify-content: center;
+	            gap: 2rem;
+	            padding: 2rem;
+	            max-width: 1200px;
+	            margin: 0 auto;
+	            width: 100%;
+	        }
+	
+	        .education-card {
+	            flex: 1;
+	            min-width: 280px;
+	            max-width: 400px;
+	            width: 100%;
+	            background: white;
+	            border-radius: 8px;
+	            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	            padding: 1.5rem;
+	            text-align: center;
+	            margin: 1rem;
+	            display: flex;
+	            flex-direction: column;
+	        }
+	
+	        .education-card img {
+	            width: 100%;
+	            max-width: 200px;
+	            height: auto;
+	            object-fit: contain;
+	            margin: 0 auto 1rem;
+		        text-align: center;
+	        }
+	
+	        .education-card h2 {
+	            color: #333;
+	            margin: 1rem 0;
+	            font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+	            word-wrap: break-word;
+	        }
+	
+	        .education-details {
+	            margin: 1rem 0;
+		        text-align: center;
+	            flex-grow: 1;
+	        }
+	
+	        .education-details p {
+	            margin: 0.5rem 0;
+	            color: #666;
+		        text-align: center;
+	            font-size: clamp(0.9rem, 2vw, 1rem);
+	        }
+
+		    .button-container {
+	            width: 100%;
+	            display: flex;
+	            justify-content: center;
+	            margin-top: 1rem;
+	        }	
+
+	        .button {
+	            display: inline-flex;
+		        align-items: center;
+		        justify-content: center;
+	            padding: 0.75rem 1.5rem;
+	            background-color: #fcfdff;
+	            color: white;
+	            text-decoration: none;
+	            border-radius: 4px;
+	            transition: background-color 0.3s;
+		        text-align: center;
+		        width: fit-content;
+    		    margin: 0 auto;
+	        }
+	
+	        .button:hover {
+	            background-color: #fcfdff;
+	        }
+
+            /* Media Queries */
+            @media screen and (max-width: 736px) {
+                #nav {
+                    flex-direction: column;
+                    padding: 1rem;
+                    gap: 1rem;
+                }
+
+                #nav ul.links {
+                    justify-content: center;
+                    gap: 1rem;
+                    text-align: center;
+                }
+
+                #nav ul.icons {
+                    justify-content: center;
+                }
+
+                .education-container {
+                    padding: 1rem;
+                }
+
+                .education-card {
+                    margin: 0.5rem;
+                    padding: 1rem;
+                }
             }
 
-            #nav ul.links {
-                justify-content: center;
-                gap: 1rem;
-                text-align: center;
-            }
+            @media screen and (min-width: 1681px) {
+                .education-container {
+                    max-width: 1600px;
+                }
 
-            #nav ul.icons {
-                justify-content: center;
+                .education-card {
+                    max-width: 500px;
+                }
             }
-        }
-    </style>
-</head>
-<body>
-    <!-- Nav -->
-    <nav id="nav">
-        <ul class="links">
-            <li><a href="index.html">AI & ML</a></li>
-            <li><a href="generic.html">Product</a></li>
-            <li><a href="elements.html">Strategy</a></li>
-            <li class="active"><a href="education.html">Education</a></li>
-            <li><a href="certifications.html">Certifications</a></li>
-        </ul>
-        <ul class="icons">
-            <li><a href="https://www.linkedin.com/in/adithyaramachar/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-            <li><a href="https://github.com/AdithyaRamachar" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-        </ul>
-    </nav>
-</body>
+	    </style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">Adithya Ramachar</a>
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">AI & ML</a></li>
+					<li><a href="generic.html">Product</a></li>
+					<li><a href="elements.html">Strategy</a></li>
+					<li class="active"><a href="education.html">Education</a></li>
+					<li><a href="certifications.html">Certifications</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/adithyaramachar/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/AdithyaRamachar" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+				<div class="education-container">
+				        <div class="education-card">
+				            <a href="https://www.ie.edu/business-school/">
+				                <img src="images/IE-MIM.png" alt="IE Business School">
+				            </a>
+				            <h2>IE Business School</h2>
+				            <div class="education-details">
+				                <p>Masters in Management</p>
+				                <p>Major in Business Analytics</p>
+				            </div>
+				            <a href="https://drive.google.com/file/d/1gOB9jlwbCTZqutBpr_h_IE7zsT1qCd1e/view?usp=sharing" class="button">View Diploma</a>
+				        </div>
+				
+				        <div class="education-card">
+				            <a href="https://www.iisertirupati.ac.in/">
+				                <img src="images/IISER tirupati-logo.png" alt="IISER Tirupati">
+				            </a>
+				            <h2>Indian Institute of Science Education and Research Tirupati</h2>
+				            <div class="education-details">
+				                <p>Bachelor of Science</p>
+				                <p>Master of Science</p>
+				                <p>Major in Life Sciences</p>
+				            </div>
+				            <a href="https://drive.google.com/file/d/1yBlmHocHgez_O4VjuItrjaigL7y6GEDX/view?usp=sharing" class="button">View Diploma</a>
+				        </div>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<section class="split contact">
+					<section class="alt">
+						<h3>Location</h3>
+						<p>Madrid, Spain</p>
+					</section>
+					<section>
+						<h3>Schedule a Call</h3>
+						<p><a href="https://calendly.com/adithya-ramachar">adithya-ramachar</a></p>
+					</section>
+					<section>
+						<h3>Email</h3>
+						<p><a href="#">adithya.r@alumni.ie.edu</a></p>
+					</section>
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="https://www.linkedin.com/in/adithyaramachar/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/AdithyaRamachar" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</section>
+				</section>
+			</footer>
+
+			<!-- Copyright -->
+			<div id="copyright">
+				<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
 </html>
