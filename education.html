@@ -14,33 +14,14 @@
             align-items: center;
             padding: 1rem 2rem;
             width: 100%;
-            background: rgba(35, 35, 35, 0.95);
         }
 
         #nav ul.links {
             display: flex;
-            gap: 2rem;
             margin: 0;
             padding: 0;
             list-style: none;
-            flex-wrap: wrap;
-        }
-
-        #nav ul.links li {
-            padding: 0;
-        }
-
-        #nav ul.links li a {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 0.5rem 0;
-            border-bottom: 2px solid transparent;
-            transition: border-color 0.3s ease;
-        }
-
-        #nav ul.links li.active a,
-        #nav ul.links li a:hover {
-            border-bottom-color: #ffffff;
+            gap: 1rem;
         }
 
         #nav ul.icons {
@@ -51,21 +32,7 @@
             list-style: none;
         }
 
-        #nav ul.icons li {
-            padding: 0;
-        }
-
-        #nav ul.icons li a {
-            color: #ffffff;
-            font-size: 1.25rem;
-            transition: color 0.3s ease;
-        }
-
-        #nav ul.icons li a:hover {
-            color: #9bf1ff;
-        }
-
-		/* Education Cards Styles */
+		/* Education Cards Styles - keeping original from first code */
 		.posts {
 		    display: flex;
 		    flex-wrap: wrap;
@@ -75,34 +42,26 @@
 		}	
 	        .education-container {
 	            display: flex;
-	            flex-wrap: wrap;
 	            justify-content: center;
 	            gap: 2rem;
 	            padding: 2rem;
 	            max-width: 1200px;
 	            margin: 0 auto;
-	            width: 100%;
 	        }
 	
 	        .education-card {
 	            flex: 1;
-	            min-width: 280px;
 	            max-width: 400px;
-	            width: 100%;
 	            background: white;
 	            border-radius: 8px;
 	            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 	            padding: 1.5rem;
 	            text-align: center;
-	            margin: 1rem;
-	            display: flex;
-	            flex-direction: column;
 	        }
 	
 	        .education-card img {
-	            width: 100%;
-	            max-width: 200px;
-	            height: auto;
+	            width: 200px;
+	            height: 200px;
 	            object-fit: contain;
 	            margin: 0 auto 1rem;
 		        text-align: center;
@@ -111,32 +70,30 @@
 	        .education-card h2 {
 	            color: #333;
 	            margin: 1rem 0;
-	            font-size: clamp(1.2rem, 2.5vw, 1.5rem);
-	            word-wrap: break-word;
+	            font-size: 1.5rem;
 	        }
 	
 	        .education-details {
 	            margin: 1rem 0;
 		        text-align: center;
-	            flex-grow: 1;
 	        }
 	
 	        .education-details p {
 	            margin: 0.5rem 0;
 	            color: #666;
 		        text-align: center;
-	            font-size: clamp(0.9rem, 2vw, 1rem);
 	        }
 
 		    .button-container {
 	            width: 100%;
 	            display: flex;
 	            justify-content: center;
-	            margin-top: 1rem;
+	            margin-top: auto;
+	            padding-top: 1rem;
 	        }	
 
 	        .button {
-	            display: inline-flex;
+	            display: flex;
 		        align-items: center;
 		        justify-content: center;
 	            padding: 0.75rem 1.5rem;
@@ -144,10 +101,12 @@
 	            color: white;
 	            text-decoration: none;
 	            border-radius: 4px;
+	            margin-top: auto;
 	            transition: background-color 0.3s;
 		        text-align: center;
 		        width: fit-content;
-    		    margin: 0 auto;
+    		    margin-left: auto;
+    		    margin-right: auto;
 	        }
 	
 	        .button:hover {
@@ -159,36 +118,26 @@
                 #nav {
                     flex-direction: column;
                     padding: 1rem;
-                    gap: 1rem;
                 }
 
                 #nav ul.links {
                     justify-content: center;
-                    gap: 1rem;
-                    text-align: center;
+                    flex-wrap: wrap;
                 }
 
                 #nav ul.icons {
                     justify-content: center;
+                    margin-top: 1rem;
                 }
 
                 .education-container {
-                    padding: 1rem;
+                    flex-direction: column;
+                    align-items: center;
                 }
 
                 .education-card {
-                    margin: 0.5rem;
-                    padding: 1rem;
-                }
-            }
-
-            @media screen and (min-width: 1681px) {
-                .education-container {
-                    max-width: 1600px;
-                }
-
-                .education-card {
-                    max-width: 500px;
+                    width: 100%;
+                    margin: 1rem 0;
                 }
             }
 	    </style>
@@ -216,6 +165,7 @@
 				</ul>
 			</nav>
 
+			<!-- Rest of the content remains the same -->
 			<!-- Main -->
 			<div id="main">
 				<div class="education-container">
